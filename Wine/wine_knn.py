@@ -3,9 +3,15 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import GridSearchCV
 import matplotlib.pyplot as plt
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+import time
+
+# Start timer
+start_time = time.time()
 
 # Load the data
-from wine_data2 import X_train, X_test, y_train, y_test
+from wine_data import X_train, X_test, y_train, y_test
 
 # Scale the data
 scaler = StandardScaler()
@@ -35,6 +41,8 @@ print(clf.best_params_)
 print(clf.best_estimator_)
 print('gridscores:')
 print(clf.grid_scores_)
+
+print('This function took', time.time()-start_time, 'seconds.')
 
 # Show learning curve
 scores = [x[1] for x in clf.grid_scores_]

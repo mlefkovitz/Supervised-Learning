@@ -4,9 +4,16 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
 from scipy import stats
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+import time
+
+# Start timer
+start_time = time.time()
+
 
 # Load the data
-from wine_data2 import X_train, X_test, y_train, y_test
+from wine_data import X_train, X_test, y_train, y_test
 
 # Scale the data
 scaler = StandardScaler()
@@ -59,6 +66,8 @@ print(scores)
 scores = np.array(scores).reshape(len(grid_params['alpha']), len(grid_params['hidden_layer_sizes']))
 print('scores:')
 print(scores)
+
+print('This function took', time.time()-start_time, 'seconds.')
 
 # Show learning curve
 for ind, i in enumerate(grid_params['hidden_layer_sizes']):

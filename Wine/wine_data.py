@@ -17,13 +17,3 @@ le = LabelEncoder()
 # encode classifications as 1 and 0 rather than 2 and 3 (original state)
 y = le.fit_transform(y)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=1)
-
-splits = 4
-testsize = 1/splits
-split_number = np.arange(splits)
-ss = ShuffleSplit(n_splits=splits, test_size=testsize, random_state=1)
-
-for train, CV in ss.split(X_train,y_train):
-    i=1
-
-X_trainCV, X_CV, y_trainCV, y_CV = X_train[train], X_train[CV], y_train[train], y_train[CV]

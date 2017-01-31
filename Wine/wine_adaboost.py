@@ -2,12 +2,17 @@ from sklearn.metrics import accuracy_score
 from PrunedTrees import dtclf_pruned
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.model_selection import GridSearchCV
-
 import matplotlib.pyplot as plt
 import numpy as np
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+import time
+
+# Start timer
+start_time = time.time()
 
 # Load the data
-from wine_data2 import X_train, X_test, y_train, y_test
+from wine_data import X_train, X_test, y_train, y_test
 
 # Define the classifier
 #tree = DecisionTreeClassifier(criterion='gini', max_depth=20, random_state=0)
@@ -43,6 +48,8 @@ print(scores)
 scores = np.array(scores).reshape(len(parameters['learning_rate']), len(parameters['n_estimators']))
 print('scores:')
 print(scores)
+
+print('This function took', time.time()-start_time, 'seconds.')
 
 # Show learning curve
 for ind, i in enumerate(parameters['learning_rate']):
