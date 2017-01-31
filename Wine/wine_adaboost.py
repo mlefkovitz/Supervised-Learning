@@ -2,6 +2,7 @@ from sklearn.metrics import accuracy_score
 from PrunedTrees import dtclf_pruned
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.model_selection import GridSearchCV
+from Print_Timer_Results import *
 import matplotlib.pyplot as plt
 import numpy as np
 import warnings
@@ -49,7 +50,7 @@ scores = np.array(scores).reshape(len(parameters['learning_rate']), len(paramete
 print('scores:')
 print(scores)
 
-print('This function took', time.time()-start_time, 'seconds.')
+Stop_Timer(start_time)
 
 # Show learning curve
 for ind, i in enumerate(parameters['learning_rate']):

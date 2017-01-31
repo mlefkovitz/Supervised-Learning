@@ -4,9 +4,12 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import GridSearchCV
 import matplotlib.pyplot as plt
 import numpy as np
+import time
+from Print_Timer_Results import *
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-import time
+
+
 
 # Start timer
 start_time = time.time()
@@ -56,7 +59,7 @@ scores = scores.transpose()
 print('scores:')
 print(scores)
 
-print('This function took', time.time()-start_time, 'seconds.')
+Stop_Timer(start_time)
 
 # Show learning curve
 test = [x[0] for x in clf.grid_scores_]

@@ -4,6 +4,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
 from scipy import stats
+from Print_Timer_Results import *
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 import time
@@ -67,7 +68,7 @@ scores = np.array(scores).reshape(len(grid_params['alpha']), len(grid_params['hi
 print('scores:')
 print(scores)
 
-print('This function took', time.time()-start_time, 'seconds.')
+Stop_Timer(start_time)
 
 # Show learning curve
 for ind, i in enumerate(grid_params['hidden_layer_sizes']):

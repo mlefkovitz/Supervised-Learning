@@ -1,6 +1,7 @@
 from sklearn.metrics import accuracy_score
 from PrunedTrees import dtclf_pruned
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+from Print_Timer_Results import *
 import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -39,7 +40,7 @@ print(clf.best_estimator_)
 print('gridscores:')
 print(clf.grid_scores_)
 
-print('This function took', time.time()-start_time, 'seconds.')
+Stop_Timer(start_time)
 
 # Show learning curve
 scores = [x[1] for x in clf.grid_scores_]
