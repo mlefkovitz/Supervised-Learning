@@ -5,6 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
 from scipy import stats
 from Print_Timer_Results import *
+from plot_learning_curve3 import drawLearningCurve
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 import time
@@ -53,6 +54,9 @@ y_test_pred = clf.predict(X_test)
 test_acc = np.sum(y_test == y_test_pred, axis=0) / X_test.shape[0]
 print('Test accuracy: %.2f%%' % (test_acc * 100))
 
+# Draw learning curve
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
+
 # Print diagnostics
 print(clf.best_score_)
 print(clf.best_params_)
@@ -71,12 +75,12 @@ print(scores)
 Stop_Timer(start_time)
 
 # Show learning curve
-for ind, i in enumerate(grid_params['hidden_layer_sizes']):
-    # print('hidden_layer_sizes: ' + str(i))
-    # print('alpha:' + str(grid_params['alpha']))
-    # print('Score:' + str(scores[:,ind]))
-    plt.plot(grid_params['alpha'], scores[:,ind], label='hidden_layer_sizes: ' + str(i))
-plt.legend()
-plt.xlabel('alpha')
-plt.ylabel('Mean score')
+# for ind, i in enumerate(grid_params['hidden_layer_sizes']):
+#     # print('hidden_layer_sizes: ' + str(i))
+#     # print('alpha:' + str(grid_params['alpha']))
+#     # print('Score:' + str(scores[:,ind]))
+#     plt.plot(grid_params['alpha'], scores[:,ind], label='hidden_layer_sizes: ' + str(i))
+# plt.legend()
+# plt.xlabel('alpha')
+# plt.ylabel('Mean score')
 plt.show()

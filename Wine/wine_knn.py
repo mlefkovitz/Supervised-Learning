@@ -4,6 +4,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import GridSearchCV
 from Print_Timer_Results import *
 import matplotlib.pyplot as plt
+from plot_learning_curve3 import drawLearningCurve
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 import time
@@ -36,6 +37,9 @@ train_accuracy = accuracy_score(y_train, y_pred_train)
 test_accuracy = accuracy_score(y_test, y_pred_test)
 print('KNN: train/test accuracy: %.3f/%.3f' % (train_accuracy, test_accuracy))
 
+# Draw learning curve
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
+
 # Print diagnostics
 print(clf.best_score_)
 print(clf.best_params_)
@@ -46,8 +50,8 @@ print(clf.grid_scores_)
 Stop_Timer(start_time)
 
 # Show learning curve
-scores = [x[1] for x in clf.grid_scores_]
-plt.plot(parameters['n_neighbors'], scores)
-plt.xlabel('neighbors')
-plt.ylabel('Mean score')
+# scores = [x[1] for x in clf.grid_scores_]
+# plt.plot(parameters['n_neighbors'], scores)
+# plt.xlabel('neighbors')
+# plt.ylabel('Mean score')
 plt.show()

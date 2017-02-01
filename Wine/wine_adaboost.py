@@ -3,6 +3,7 @@ from PrunedTrees import dtclf_pruned
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.model_selection import GridSearchCV
 from Print_Timer_Results import *
+from plot_learning_curve3 import drawLearningCurve
 import matplotlib.pyplot as plt
 import numpy as np
 import warnings
@@ -36,6 +37,9 @@ ada_train = accuracy_score(y_train, y_train_pred)
 ada_test = accuracy_score(y_test, y_test_pred)
 print('Ada boost train/test accuracies %.3f/%.3f' % (ada_train, ada_test))
 
+# Draw learning curve
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
+
 # Print diagnostics
 print(clf.best_score_)
 print(clf.best_params_)
@@ -53,14 +57,14 @@ print(scores)
 Stop_Timer(start_time)
 
 # Show learning curve
-for ind, i in enumerate(parameters['learning_rate']):
-    print('learning_rate: ' + str(i))
-    print('n_estimators:' + str(parameters['n_estimators']))
-    print('Score:' + str(scores[ind]))
-    plt.plot(parameters['n_estimators'], scores[ind], label='learning_rate: ' + str(i))
-plt.legend()
-plt.xlabel('n_estimators')
-plt.ylabel('Mean score')
+# for ind, i in enumerate(parameters['learning_rate']):
+#     print('learning_rate: ' + str(i))
+#     print('n_estimators:' + str(parameters['n_estimators']))
+#     print('Score:' + str(scores[ind]))
+#     plt.plot(parameters['n_estimators'], scores[ind], label='learning_rate: ' + str(i))
+# plt.legend()
+# plt.xlabel('n_estimators')
+# plt.ylabel('Mean score')
 plt.show()
 
 # from sklearn.tree import export_graphviz
