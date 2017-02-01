@@ -13,8 +13,8 @@ def compute_error(x, y, model):
     return ascore
 
 
-def drawLearningCurve(model, X_train, X_test, y_train, y_test):
-    sizes = np.linspace(2, X_train.shape[0], 50, endpoint=True).astype(int)
+def drawLearningCurve(model, X_train, X_test, y_train, y_test, min_size=1, numpoints=50):
+    sizes = np.linspace(min_size, X_train.shape[0], numpoints, endpoint=True).astype(int)
     train_error = np.zeros(sizes.shape)
     crossval_error = np.zeros(sizes.shape)
 

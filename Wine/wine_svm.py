@@ -68,7 +68,7 @@ print('SVM Kernel train/test accuracy: %.3f/%.3f' % (train_accuracy, test_accura
 # plot_response(*response)
 
 # Draw learning curve
-drawLearningCurve(clf.best_estimator_, X_train, X_test, y_train, y_test)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
 
 # Print diagnostics
 print(clf.best_score_)

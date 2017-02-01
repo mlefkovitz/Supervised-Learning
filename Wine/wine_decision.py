@@ -2,6 +2,7 @@ from sklearn.metrics import accuracy_score
 from PrunedTrees import dtclf_pruned
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 from Print_Timer_Results import *
+from plot_learning_curve3 import drawLearningCurve
 import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -33,6 +34,9 @@ print('Decision Tree train/test accuracy: %.3f/%.3f' % (train_accuracy, test_acc
 from sklearn.tree import export_graphviz
 export_graphviz(clf.best_estimator_, out_file = 'Wine2pruned.dot', feature_names=['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality'])
 
+# Draw learning curve
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=200)
+
 # Print diagnostics
 print(clf.best_score_)
 print(clf.best_params_)
@@ -43,8 +47,8 @@ print(clf.grid_scores_)
 Stop_Timer(start_time)
 
 # Show learning curve
-scores = [x[1] for x in clf.grid_scores_]
-plt.plot(parameters['alpha'], scores)
-plt.xlabel('alpha')
-plt.ylabel('Mean score')
+# scores = [x[1] for x in clf.grid_scores_]
+# plt.plot(parameters['alpha'], scores)
+# plt.xlabel('alpha')
+# plt.ylabel('Mean score')
 plt.show()
