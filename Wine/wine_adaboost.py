@@ -17,7 +17,6 @@ start_time = time.time()
 from wine_data import X_train, X_test, y_train, y_test
 
 # Define the classifier
-#tree = DecisionTreeClassifier(criterion='gini', max_depth=20, random_state=0)
 tree = dtclf_pruned(alpha=0.006)
 ada = AdaBoostClassifier(base_estimator=tree, random_state=0)
 
