@@ -5,8 +5,8 @@ from Print_Timer_Results import *
 from plot_learning_curve3 import drawLearningCurve
 import matplotlib.pyplot as plt
 import warnings
-warnings.filterwarnings("ignore", category=DeprecationWarning)
 import time
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Start timer
 start_time = time.time()
@@ -35,7 +35,7 @@ from sklearn.tree import export_graphviz
 export_graphviz(clf.best_estimator_, out_file = 'Wine2pruned.dot', feature_names=['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality'])
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=5)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=200)
 plt.savefig('Decision Tree Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
@@ -53,4 +53,5 @@ scoreplot = plt.subplot()
 scoreplot.plot(parameters['alpha'], scores)
 scoreplot.set_xlabel('alpha')
 scoreplot.set_ylabel('Mean score')
+scoreplot.set_title('Validation Curve')
 plt.savefig('Decision Tree Validation Curve.png', bbox_inches='tight')

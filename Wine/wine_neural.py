@@ -3,16 +3,14 @@ import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
-from scipy import stats
 from Print_Timer_Results import *
 from plot_learning_curve3 import drawLearningCurve
+import time
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-import time
 
 # Start timer
 start_time = time.time()
-
 
 # Load the data
 from wine_data import X_train, X_test, y_train, y_test
@@ -25,21 +23,10 @@ X_test = scaler.transform(X_test)
 
 # Define the classifier
 nn = MLPClassifier(solver='lbfgs', random_state=1)
-
 grid_params = {'alpha': [0.05, 0.01, 0.005, 0.001]
               ,'hidden_layer_sizes': [3, 4, 7, 8, 12, 15, 20, 30, 50]
               }
-
-# grid_params = {'alpha': [0.05, 0.01, 0.005, 0.001]
-#               ,'hidden_layer_sizes': [4, 8, 12]
-#               }
-
-rand_params = {'alpha': stats.uniform(0.001, 0.05)
-              ,'hidden_layer_sizes': stats.randint(3, 50)
-              }
-
 clf = GridSearchCV(nn, param_grid=grid_params, cv=3)
-#clf = RandomizedSearchCV(nn, param_distributions=rand_params, n_iter=100, cv=5)
 
 # Run the classifier
 clf.fit(X_train, y_train)
@@ -55,7 +42,7 @@ test_acc = np.sum(y_test == y_test_pred, axis=0) / X_test.shape[0]
 print('Test accuracy: %.2f%%' % (test_acc * 100))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=5)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
 plt.savefig('Neural Network Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
@@ -82,7 +69,9 @@ for ind, i in enumerate(grid_params['hidden_layer_sizes']):
     # print('alpha:' + str(grid_params['alpha']))
     # print('Score:' + str(scores[:,ind]))
     scoreplot.plot(grid_params['alpha'], scores[:,ind], label='hidden_layer_sizes: ' + str(i))
-scoreplot.legend()
+scoreplot.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 scoreplot.set_xlabel('alpha')
+scoreplot.set_xlim([0,0.05])
 scoreplot.set_ylabel('Mean score')
+scoreplot.set_title('Validation Curve')
 plt.savefig('Neural Network Validation Curve.png', bbox_inches='tight')

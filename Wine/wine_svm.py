@@ -1,4 +1,3 @@
-from sklearn.model_selection import learning_curve
 from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
@@ -43,7 +42,7 @@ test_accuracy = accuracy_score(y_test, y_pred_test)
 print('SVM Kernel train/test accuracy: %.3f/%.3f' % (train_accuracy, test_accuracy))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=5)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
 plt.savefig('SVM Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
@@ -64,7 +63,7 @@ print(scores)
 
 Stop_Timer(start_time)
 
-# # Show learning curve
+# Show learning curve
 test = [x[0] for x in clf.grid_scores_]
 total = len(parameters['gamma'])*len(parameters['kernel'])
 gammas = [x['gamma'] for x in test[0:total]]
@@ -76,7 +75,8 @@ for ind, i in enumerate(iterator):
     # print('C:' + str(parameters['C']))
     # print('Score:' + str(scores[ind]))
     scoreplot.plot(parameters['C'], scores[ind], label='kernel: ' + str(i[1]) + '; gamma: ' + str(i[0]))
-scoreplot.legend()
+scoreplot.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1), fancybox=True, shadow=True, ncol=2)
 scoreplot.set_xlabel('C')
 scoreplot.set_ylabel('Mean score')
+scoreplot.set_title('Validation Curve')
 plt.savefig('SVM Validation Curve.png', bbox_inches='tight')

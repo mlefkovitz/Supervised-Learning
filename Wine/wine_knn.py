@@ -6,8 +6,8 @@ from Print_Timer_Results import *
 import matplotlib.pyplot as plt
 from plot_learning_curve3 import drawLearningCurve
 import warnings
-warnings.filterwarnings("ignore", category=DeprecationWarning)
 import time
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Start timer
 start_time = time.time()
@@ -38,7 +38,7 @@ test_accuracy = accuracy_score(y_test, y_pred_test)
 print('KNN: train/test accuracy: %.3f/%.3f' % (train_accuracy, test_accuracy))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=5)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
 plt.savefig('KNN Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
@@ -56,4 +56,5 @@ scoreplot = plt.subplot()
 scoreplot.plot(parameters['n_neighbors'], scores)
 scoreplot.set_xlabel('neighbors')
 scoreplot.set_ylabel('Mean score')
+scoreplot.set_title('Validation Curve')
 plt.savefig('KNN Validation Curve.png', bbox_inches='tight')

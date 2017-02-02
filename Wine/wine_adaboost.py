@@ -38,7 +38,7 @@ ada_test = accuracy_score(y_test, y_test_pred)
 print('Ada boost train/test accuracies %.3f/%.3f' % (ada_train, ada_test))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=5)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=10)
 plt.savefig('Boosting Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
@@ -63,9 +63,10 @@ for ind, i in enumerate(parameters['learning_rate']):
     # print('n_estimators:' + str(parameters['n_estimators']))
     # print('Score:' + str(scores[ind]))
     scoreplot.plot(parameters['n_estimators'], scores[ind], label='learning_rate: ' + str(i))
-scoreplot.legend()
+scoreplot.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 scoreplot.set_xlabel('n_estimators')
 scoreplot.set_ylabel('Mean score')
+scoreplot.set_title('Validation Curve')
 plt.savefig('Boosting Validation Curve.png', bbox_inches='tight')
 
 # from sklearn.tree import export_graphviz
