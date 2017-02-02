@@ -38,7 +38,8 @@ ada_test = accuracy_score(y_test, y_test_pred)
 print('Ada boost train/test accuracies %.3f/%.3f' % (ada_train, ada_test))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=5)
+plt.savefig('Boosting Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
 print(clf.best_score_)
@@ -49,7 +50,6 @@ print(clf.grid_scores_)
 scores = [x[1] for x in clf.grid_scores_]
 print('scores:')
 print(scores)
-#scores = np.array(scores).reshape(len(parameters['n_estimators']), len(parameters['learning_rate']))
 scores = np.array(scores).reshape(len(parameters['learning_rate']), len(parameters['n_estimators']))
 print('scores:')
 print(scores)
@@ -57,15 +57,16 @@ print(scores)
 Stop_Timer(start_time)
 
 # Show learning curve
-# for ind, i in enumerate(parameters['learning_rate']):
-#     print('learning_rate: ' + str(i))
-#     print('n_estimators:' + str(parameters['n_estimators']))
-#     print('Score:' + str(scores[ind]))
-#     plt.plot(parameters['n_estimators'], scores[ind], label='learning_rate: ' + str(i))
-# plt.legend()
-# plt.xlabel('n_estimators')
-# plt.ylabel('Mean score')
-plt.show()
+scoreplot = plt.subplot()
+for ind, i in enumerate(parameters['learning_rate']):
+    # print('learning_rate: ' + str(i))
+    # print('n_estimators:' + str(parameters['n_estimators']))
+    # print('Score:' + str(scores[ind]))
+    scoreplot.plot(parameters['n_estimators'], scores[ind], label='learning_rate: ' + str(i))
+scoreplot.legend()
+scoreplot.set_xlabel('n_estimators')
+scoreplot.set_ylabel('Mean score')
+plt.savefig('Boosting Validation Curve.png', bbox_inches='tight')
 
 # from sklearn.tree import export_graphviz
 # export_graphviz(clf.best_estimator_, out_file = 'Wine2boosted.dot', feature_names=['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality'])

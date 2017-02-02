@@ -38,7 +38,8 @@ test_accuracy = accuracy_score(y_test, y_pred_test)
 print('KNN: train/test accuracy: %.3f/%.3f' % (train_accuracy, test_accuracy))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=5)
+plt.savefig('KNN Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
 print(clf.best_score_)
@@ -50,8 +51,9 @@ print(clf.grid_scores_)
 Stop_Timer(start_time)
 
 # Show learning curve
-# scores = [x[1] for x in clf.grid_scores_]
-# plt.plot(parameters['n_neighbors'], scores)
-# plt.xlabel('neighbors')
-# plt.ylabel('Mean score')
-plt.show()
+scores = [x[1] for x in clf.grid_scores_]
+scoreplot = plt.subplot()
+scoreplot.plot(parameters['n_neighbors'], scores)
+scoreplot.set_xlabel('neighbors')
+scoreplot.set_ylabel('Mean score')
+plt.savefig('KNN Validation Curve.png', bbox_inches='tight')

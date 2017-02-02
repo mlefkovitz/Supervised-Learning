@@ -38,7 +38,7 @@ rand_params = {'alpha': stats.uniform(0.001, 0.05)
               ,'hidden_layer_sizes': stats.randint(3, 50)
               }
 
-clf = GridSearchCV(nn, param_grid=grid_params, cv=5)
+clf = GridSearchCV(nn, param_grid=grid_params, cv=3)
 #clf = RandomizedSearchCV(nn, param_distributions=rand_params, n_iter=100, cv=5)
 
 # Run the classifier
@@ -55,7 +55,8 @@ test_acc = np.sum(y_test == y_test_pred, axis=0) / X_test.shape[0]
 print('Test accuracy: %.2f%%' % (test_acc * 100))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=5)
+plt.savefig('Neural Network Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
 print(clf.best_score_)
@@ -75,12 +76,13 @@ print(scores)
 Stop_Timer(start_time)
 
 # Show learning curve
-# for ind, i in enumerate(grid_params['hidden_layer_sizes']):
-#     # print('hidden_layer_sizes: ' + str(i))
-#     # print('alpha:' + str(grid_params['alpha']))
-#     # print('Score:' + str(scores[:,ind]))
-#     plt.plot(grid_params['alpha'], scores[:,ind], label='hidden_layer_sizes: ' + str(i))
-# plt.legend()
-# plt.xlabel('alpha')
-# plt.ylabel('Mean score')
-plt.show()
+scoreplot = plt.subplot()
+for ind, i in enumerate(grid_params['hidden_layer_sizes']):
+    # print('hidden_layer_sizes: ' + str(i))
+    # print('alpha:' + str(grid_params['alpha']))
+    # print('Score:' + str(scores[:,ind]))
+    scoreplot.plot(grid_params['alpha'], scores[:,ind], label='hidden_layer_sizes: ' + str(i))
+scoreplot.legend()
+scoreplot.set_xlabel('alpha')
+scoreplot.set_ylabel('Mean score')
+plt.savefig('Neural Network Validation Curve.png', bbox_inches='tight')

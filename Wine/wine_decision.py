@@ -1,6 +1,6 @@
 from sklearn.metrics import accuracy_score
 from PrunedTrees import dtclf_pruned
-from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+from sklearn.model_selection import GridSearchCV
 from Print_Timer_Results import *
 from plot_learning_curve3 import drawLearningCurve
 import matplotlib.pyplot as plt
@@ -35,7 +35,8 @@ from sklearn.tree import export_graphviz
 export_graphviz(clf.best_estimator_, out_file = 'Wine2pruned.dot', feature_names=['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality'])
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=200)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=5)
+plt.savefig('Decision Tree Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics
 print(clf.best_score_)
@@ -47,8 +48,9 @@ print(clf.grid_scores_)
 Stop_Timer(start_time)
 
 # Show learning curve
-# scores = [x[1] for x in clf.grid_scores_]
-# plt.plot(parameters['alpha'], scores)
-# plt.xlabel('alpha')
-# plt.ylabel('Mean score')
-plt.show()
+scores = [x[1] for x in clf.grid_scores_]
+scoreplot = plt.subplot()
+scoreplot.plot(parameters['alpha'], scores)
+scoreplot.set_xlabel('alpha')
+scoreplot.set_ylabel('Mean score')
+plt.savefig('Decision Tree Validation Curve.png', bbox_inches='tight')
