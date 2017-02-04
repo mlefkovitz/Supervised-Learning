@@ -35,7 +35,7 @@ from sklearn.tree import export_graphviz
 export_graphviz(clf.best_estimator_, out_file = 'Wine2pruned.dot', feature_names=['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality'])
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=100)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=100, numpoints=100)
 plt.savefig('Decision Tree Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics

@@ -42,7 +42,7 @@ test_acc = np.sum(y_test == y_test_pred, axis=0) / X_test.shape[0]
 print('Test accuracy: %.2f%%' % (test_acc * 100))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=100, numpoints=50)
 plt.savefig('Neural Network Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics

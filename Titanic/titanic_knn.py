@@ -38,7 +38,7 @@ test_accuracy = accuracy_score(y_test, y_pred_test)
 print('KNN: train/test accuracy: %.3f/%.3f' % (train_accuracy, test_accuracy))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=1000, numpoints=50)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=100, numpoints=50)
 plt.savefig('KNN Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics

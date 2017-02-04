@@ -37,7 +37,7 @@ ada_test = accuracy_score(y_test, y_test_pred)
 print('Ada boost train/test accuracies %.3f/%.3f' % (ada_train, ada_test))
 
 # Draw learning curve
-drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=2000, numpoints=10)
+drawLearningCurve(clf, X_train, X_test, y_train, y_test, min_size=200, numpoints=10)
 plt.savefig('Boosting Learning Curve.png', bbox_inches='tight')
 
 # Print diagnostics

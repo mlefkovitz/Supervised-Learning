@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cb26baf-3c53-408a-9fb3-dd51e32eabc1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Titanic/titanic_data.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Wine/plot_learning_curve2.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Wine/plot_learning_curve3.py" afterPath="$PROJECT_DIR$/Wine/plot_learning_curve.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/Boosting Learning Curve.png" afterPath="$PROJECT_DIR$/Wine/Boosting Learning Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/Decision Tree Learning Curve.png" afterPath="$PROJECT_DIR$/Wine/Decision Tree Learning Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/Decision Tree Validation Curve.png" afterPath="$PROJECT_DIR$/Wine/Decision Tree Validation Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/Final Graphs/Decision Tree Learning Curve.png" afterPath="$PROJECT_DIR$/Wine/Final Graphs/Decision Tree Learning Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Supervised-Learning.iml" afterPath="$PROJECT_DIR$/.idea/Supervised-Learning.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/Wine2pruned.dot" afterPath="$PROJECT_DIR$/Wine/Wine2pruned.dot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/wine_adaboost.py" afterPath="$PROJECT_DIR$/Wine/wine_adaboost.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/wine_decision.py" afterPath="$PROJECT_DIR$/Wine/wine_decision.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/wine_knn.py" afterPath="$PROJECT_DIR$/Wine/wine_knn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/wine_neural.py" afterPath="$PROJECT_DIR$/Wine/wine_neural.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wine/wine_svm.py" afterPath="$PROJECT_DIR$/Wine/wine_svm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/Wine2pruned.dot" afterPath="$PROJECT_DIR$/Titanic/Wine2pruned.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/titanic_adaboost.py" afterPath="$PROJECT_DIR$/Titanic/titanic_adaboost.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/titanic_decision.py" afterPath="$PROJECT_DIR$/Titanic/titanic_decision.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/titanic_knn.py" afterPath="$PROJECT_DIR$/Titanic/titanic_knn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/titanic_neural.py" afterPath="$PROJECT_DIR$/Titanic/titanic_neural.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/titanic_svm.py" afterPath="$PROJECT_DIR$/Titanic/titanic_svm.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,23 +23,70 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="notebook.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Titanic/notebook.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="1" />
+      <file leaf-file-name="titanic_classifiers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Titanic/titanic_classifiers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="titanic_classifiers.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Titanic/titanic_classifiers.py">
+      <file leaf-file-name="titanic_decision.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Titanic/titanic_decision.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="229">
+              <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#42#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="titanic_knn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Titanic/titanic_knn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="titanic_neural.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Titanic/titanic_neural.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="44" column="69" lean-forward="false" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="titanic_svm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Titanic/titanic_svm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="44" column="69" lean-forward="false" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="titanic_adaboost.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Titanic/titanic_adaboost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,13 +125,13 @@
         <option value="$PROJECT_DIR$/Wine/wine_adaboost.py" />
         <option value="$PROJECT_DIR$/Wine/wine_decision.py" />
         <option value="$PROJECT_DIR$/Titanic/titanic_classifiers.py" />
+        <option value="$PROJECT_DIR$/Titanic/titanic_data.py" />
+        <option value="$PROJECT_DIR$/Titanic/notebook.ipynb" />
         <option value="$PROJECT_DIR$/Titanic/titanic_decision.py" />
         <option value="$PROJECT_DIR$/Titanic/titanic_knn.py" />
         <option value="$PROJECT_DIR$/Titanic/titanic_neural.py" />
         <option value="$PROJECT_DIR$/Titanic/titanic_svm.py" />
         <option value="$PROJECT_DIR$/Titanic/titanic_adaboost.py" />
-        <option value="$PROJECT_DIR$/Titanic/titanic_data.py" />
-        <option value="$PROJECT_DIR$/Titanic/notebook.ipynb" />
       </list>
     </option>
   </component>
@@ -178,7 +217,7 @@
       <recent name="C:\Users\Myles\Documents\OMSCS\CS7641 ML\Assignment 1\Supervised-Learning" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.titanic_classifiers">
+  <component name="RunManager" selected="Python.titanic_decision">
     <configuration default="false" name="wine_adaboost" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -407,8 +446,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.titanic_classifiers" />
-        <item index="1" class="java.lang.String" itemvalue="Python.titanic_decision" />
+        <item index="0" class="java.lang.String" itemvalue="Python.titanic_decision" />
+        <item index="1" class="java.lang.String" itemvalue="Python.titanic_classifiers" />
         <item index="2" class="java.lang.String" itemvalue="Python.titanic_data" />
         <item index="3" class="java.lang.String" itemvalue="Python.wine_decision" />
         <item index="4" class="java.lang.String" itemvalue="Python.wine_adaboost" />
@@ -460,7 +499,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -706,56 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Titanic/titanic_knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Titanic/titanic_neural.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Titanic/titanic_svm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Titanic/titanic_adaboost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Titanic/titanic_decision.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Titanic/titanic_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -774,10 +763,56 @@
     <entry file="file://$PROJECT_DIR$/Titanic/titanic_classifiers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Titanic/titanic_decision.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Titanic/titanic_knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Titanic/titanic_neural.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="44" column="69" lean-forward="false" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Titanic/titanic_svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="44" column="69" lean-forward="false" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Titanic/titanic_adaboost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
