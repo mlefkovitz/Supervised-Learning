@@ -1,0 +1,8 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="volatile acidity <= 0.5\ngini = 0.4565\nsamples = 732\nvalue = [474, 258]"] ;
+1 [label="gini = 0.2951\nsamples = 478\nvalue = [392, 86]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+234 [label="gini = 0.4372\nsamples = 254\nvalue = [82, 172]"] ;
+0 -> 234 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

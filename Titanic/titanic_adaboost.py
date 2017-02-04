@@ -14,7 +14,7 @@ import time
 start_time = time.time()
 
 # Load the data
-from wine_data import X_train, X_test, y_train, y_test
+from titanic_data import X_train, X_test, y_train, y_test
 
 # Define the classifier
 tree = dtclf_pruned(alpha=0.006)
