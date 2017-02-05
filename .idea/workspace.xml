@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cb26baf-3c53-408a-9fb3-dd51e32eabc1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Titanic/gender_submission.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Wine/Model Comparison.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/Decision Tree Learning Curve.png" afterPath="$PROJECT_DIR$/Titanic/Decision Tree Learning Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/Decision Tree Validation Curve.png" afterPath="$PROJECT_DIR$/Titanic/Decision Tree Validation Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/KNN Learning Curve.png" afterPath="$PROJECT_DIR$/Titanic/KNN Learning Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/KNN Validation Curve.png" afterPath="$PROJECT_DIR$/Titanic/KNN Validation Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/SVM Learning Curve.png" afterPath="$PROJECT_DIR$/Titanic/SVM Learning Curve.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/SVM Validation Curve.png" afterPath="$PROJECT_DIR$/Titanic/SVM Validation Curve.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/Print_Timer_Results.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/PrunedTrees.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/income_adaboost.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/income_classifiers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/income_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/income_decision.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/income_knn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/income_neural.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/income_svm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/neuralnet.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Income/plot_learning_curve.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model Comparison.xlsx" afterPath="$PROJECT_DIR$/Model Comparison.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Supervised-Learning.iml" afterPath="$PROJECT_DIR$/.idea/Supervised-Learning.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Titanic/Wine2pruned.dot" afterPath="$PROJECT_DIR$/Titanic/Wine2pruned.dot" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,30 +29,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="titanic_classifiers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Titanic/titanic_classifiers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="titanic_adaboost.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Titanic/titanic_adaboost.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="44" column="23" lean-forward="true" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,6 +72,14 @@
         <option value="$PROJECT_DIR$/Titanic/titanic_neural.py" />
         <option value="$PROJECT_DIR$/Titanic/titanic_svm.py" />
         <option value="$PROJECT_DIR$/Titanic/titanic_adaboost.py" />
+        <option value="$PROJECT_DIR$/Income/Income_data.py" />
+        <option value="$PROJECT_DIR$/Income/income_classifiers.py" />
+        <option value="$PROJECT_DIR$/Income/income_adaboost.py" />
+        <option value="$PROJECT_DIR$/Income/income_svm.py" />
+        <option value="$PROJECT_DIR$/Income/income_knn.py" />
+        <option value="$PROJECT_DIR$/Income/income_neural.py" />
+        <option value="$PROJECT_DIR$/Income/income_decision.py" />
+        <option value="$PROJECT_DIR$/Income/income_data.py" />
       </list>
     </option>
   </component>
@@ -160,6 +149,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supervised-Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supervised-Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Income" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -170,94 +173,95 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Myles\Documents\OMSCS\CS7641 ML\Assignment 1\Supervised-Learning\Income" />
       <recent name="C:\Users\Myles\Documents\OMSCS\CS7641 ML\Assignment 1\Supervised-Learning\Titanic" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Myles\Documents\OMSCS\CS7641 ML\Assignment 1\Supervised-Learning" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.titanic_adaboost">
-    <configuration default="false" name="wine_decision" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.income_adaboost">
+    <configuration default="false" name="Income_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Wine" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Income" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Supervised-Learning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Wine/wine_decision.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Myles\Documents\OMSCS\CS7641 ML\Assignment 1\Supervised-Learning\Income\income_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="titanic_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="income_classifiers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Titanic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Income" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Supervised-Learning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Titanic/titanic_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Income/income_classifiers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="titanic_decision" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="income_svm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Titanic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Income" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Supervised-Learning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Titanic/titanic_decision.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Income/income_svm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="titanic_classifiers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="income_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Titanic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Income" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Supervised-Learning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Titanic/titanic_classifiers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Income/income_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="titanic_adaboost" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="income_adaboost" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Titanic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Income" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Supervised-Learning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Titanic/titanic_adaboost.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Income/income_adaboost.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -397,19 +401,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.wine_decision" />
-      <item index="1" class="java.lang.String" itemvalue="Python.titanic_data" />
-      <item index="2" class="java.lang.String" itemvalue="Python.titanic_decision" />
-      <item index="3" class="java.lang.String" itemvalue="Python.titanic_classifiers" />
-      <item index="4" class="java.lang.String" itemvalue="Python.titanic_adaboost" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Income_data" />
+      <item index="1" class="java.lang.String" itemvalue="Python.income_classifiers" />
+      <item index="2" class="java.lang.String" itemvalue="Python.income_svm" />
+      <item index="3" class="java.lang.String" itemvalue="Python.income_data" />
+      <item index="4" class="java.lang.String" itemvalue="Python.income_adaboost" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.titanic_adaboost" />
-        <item index="1" class="java.lang.String" itemvalue="Python.titanic_classifiers" />
-        <item index="2" class="java.lang.String" itemvalue="Python.titanic_decision" />
-        <item index="3" class="java.lang.String" itemvalue="Python.titanic_data" />
-        <item index="4" class="java.lang.String" itemvalue="Python.wine_decision" />
+        <item index="0" class="java.lang.String" itemvalue="Python.income_adaboost" />
+        <item index="1" class="java.lang.String" itemvalue="Python.income_classifiers" />
+        <item index="2" class="java.lang.String" itemvalue="Python.income_svm" />
+        <item index="3" class="java.lang.String" itemvalue="Python.income_data" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Income_data" />
       </list>
     </recent_temporary>
   </component>
@@ -452,13 +456,13 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17228661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17334037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32694152" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -500,7 +504,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -724,7 +728,7 @@
         <state relative-caret-position="425">
           <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -734,7 +738,7 @@
         <state relative-caret-position="544">
           <caret line="44" column="69" lean-forward="false" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,7 +756,7 @@
         <state relative-caret-position="229">
           <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -760,7 +764,7 @@
     <entry file="file://$PROJECT_DIR$/Titanic/titanic_classifiers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -769,9 +773,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Titanic/titanic_adaboost.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="44" column="23" lean-forward="true" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="440">
+          <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Income/income_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Income/income_decision.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Income/income_classifiers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Income/income_adaboost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Income/income_svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Income/income_knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Income/income_neural.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

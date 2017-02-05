@@ -1,0 +1,4 @@
+Tasks:
+1. Figure out built in learning curve for NN/GridSearchCV
+2. Find an implement a new data set
+3. Start writing paper
