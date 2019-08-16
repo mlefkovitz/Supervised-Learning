@@ -4,7 +4,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import ShuffleSplit
 
-income_df = pd.read_csv("C:/Users/Myles/Documents/OMSCS/CS7641 ML/Assignment 1/Supervised-Learning/Income/input/trainonetenthsize.csv")
+income_df = pd.read_csv("C:/Users/Myles/Documents/OMSCS/CS7641 ML/Assignment 1/Supervised-Learning//gth836x/Income/train.csv")
 
 # Drop non-predictive factors:
 #   fnlwgt doesn't mean anything
