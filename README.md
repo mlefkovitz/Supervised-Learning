@@ -23,15 +23,13 @@ The wine quality problem includes 11 independent variable attributes (acidity, s
 
 While all of the models performed well (better than a simplistic model), two performed better than each of the others: SVM (support vector machines) and KNN (k-nearest neighbors). 
 
-See the learning and validation curves for SVM below:
+See the learning curve for SVM below:
 
-![Wine SVM Learning Curve](./Wine/Final%20Graphs/SVM%20Learning%20Curve.png)		
-![Wine SVM Validation Curve](./Wine/Final%20Graphs/SVM%20Validation%20Curve.png)
+![Wine SVM Learning Curve](./Wine/Final%20Graphs/SVM%20Learning%20Curve.png)
 
-See the learning and validation curves for KNN below:
+See the learning curve for KNN below:
 
-![Wine KNN Learning Curve](./Wine/Final%20Graphs/KNN%20Learning%20Curve.png)		
-![Wine KNN Validation Curve](./Wine/Final%20Graphs/KNN%20Validation%20Curve.png)
+![Wine KNN Learning Curve](./Wine/Final%20Graphs/KNN%20Learning%20Curve.png)
 
 When evaluating a model’s performance, we should consider: the score against training data, the mean score against cross
 validated data, the score against a held-out test set, we should review the learning curve (the aforementioned scores plotted
@@ -62,10 +60,9 @@ The adult income problem classifies adults into one of two income categories: �
 
 ![Income Model Results Compared](./Income/Final%20Graphs/Income%20Model%20Results%20Compared.png)
 
-All of the models tested performed well, but SVM (support vector machines) produced the highest test score in nearly the fastest time. See the learning and validation curves for SVM below:
+All of the models tested performed well, but SVM (support vector machines) produced the highest test score in nearly the fastest time. See the learning curve for SVM below:
 
-![Income SVM Learning Curve](./Income/Final%20Graphs/SVM%20Learning%20Curve.png)		
-![Income SVM Validation Curve](./Income/Final%20Graphs/SVM%20Validation%20Curve.png)
+![Income SVM Learning Curve](./Income/Final%20Graphs/SVM%20Learning%20Curve.png)
 
 When evaluating a model’s performance, we should consider: the score against training data, the mean score against cross
 validated data, the score against a held-out test set, we should review the learning curve (the aforementioned scores plotted
