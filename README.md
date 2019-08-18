@@ -17,9 +17,7 @@ The full report is available here: [Report](/Analysis.pdf)
 
 The wine quality problem includes 11 independent variable attributes (acidity, sugar, alcohol, etc). The dependent variable the learner will try to predict is a score on the 1-10 scale (whole numbers).
 
-**Results**
-
-Model Results Comparison:
+**Model Results Comparison:**
 
 ![Wine Model Results Compared](./Wine/Final%20Graphs/Wine%20Model%20Results%20Compared.png)
 
@@ -60,9 +58,7 @@ attributes that add only noise, or increase regularization to reduce overfitting
 
 The adult income problem classifies adults into one of two income categories: ‘>50K’, or ‘<=50K’. The ‘>50K’ category identifies individuals that earned more than $50,000 in the given year, 1994. The ‘<=50K’ category identifies individuals that earned less than or equal to $50,000. $50,000 in 1994 is approximately $81,000 in today’s terms. The data has 13 attributes, 5 of which are real valued (age, hours worked per week, etc), and 8 of which are categorical (education, marital status, race, etc).
 
-** Results **
-
-Model Results Comparison:
+**Model Results Comparison:**
 
 ![Income Model Results Compared](./Income/Final%20Graphs/Income%20Model%20Results%20Compared.png)
 
